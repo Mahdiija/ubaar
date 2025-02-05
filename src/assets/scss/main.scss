@@ -1,0 +1,61 @@
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../../..//public//font/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff")
+      format("woff2"),
+    url("../../../public/font/vazir-font-v16.1.0/Vazir.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+  margin: 0;
+}
+input{
+  font-family: "MyCustomFont", sans-serif;
+}
+button{
+  font-family: "MyCustomFont", sans-serif;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 400 !important;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-color: #00BFA5 !important;
+}
+
+input[type="radio"]:checked {
+  border-color: #00BFA5;
+  outline-color: #00BFA5;
+ 
+}
+input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 100%;
+  border-color: #00BFA5 !important;
+  background-color: #00BFA5 !important;
+  outline-color: #00BFA5;
+ 
+}
